@@ -1,75 +1,68 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# Mis tareas — React
 
-¡Hola, Platzinauta!
+Aplicación de tareas creada como una **fork mejorada** del [Curso de Introducción a React.js de Platzi](https://platzi.com/reactjs). Conserva el propósito educativo del proyecto original, pero incorpora una interfaz y una estructura propias, enfocadas en practicar conceptos actuales de React.
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+El desarrollo de esta versión se realizó bajo mi propio estilo y con apoyo de **ChatGPT Codex** como herramienta de desarrollo.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+## Características
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+- Crear, buscar, completar y eliminar tareas.
+- Separación de tareas pendientes y completadas, con contador y progreso.
+- Persistencia de tareas en `localStorage`.
+- Estado compartido con Context API y hook personalizado.
+- Modal accesible para crear tareas, renderizado con React Portal.
+- Diseño adaptable para dispositivos móviles y escritorio.
+- React 19.3.
 
-## Getting Started with Create React App
+## Tecnologías
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- React 19.3
+- React DOM 19.3
+- Create React App 5
+- GitHub Pages para publicación
 
-## Available Scripts
+## Ejecutar el proyecto localmente
 
-In the project directory, you can run:
+Clona el repositorio e instala las dependencias:
 
-### `npm start`
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd curso-react-intro
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Inicia el entorno de desarrollo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm start
+```
 
-### `npm run build`
+La aplicación estará disponible en [http://localhost:3000](http://localhost:3000). Los cambios se reflejan automáticamente durante el desarrollo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Compilar para producción
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para generar una versión optimizada de la aplicación, ejecuta:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+El resultado se crea en la carpeta `build/`. Este comando también sirve para verificar que el proyecto compile correctamente antes de publicar cambios.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Publicar en GitHub Pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto está configurado para publicarse en GitHub Pages en:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[https://diegoromero82.github.io/curso-react-intro](https://diegoromero82.github.io/curso-react-intro)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para compilar y publicar la versión actual, ejecuta:
 
-## Learn More
+```bash
+npm run deploy
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este script ejecuta primero `npm run build` y después publica el contenido de `build/` mediante `gh-pages`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Origen del proyecto
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+El punto de partida fue el repositorio educativo de Platzi. Esta fork amplía ese material con decisiones de interfaz, accesibilidad, organización de código y funcionalidades implementadas como parte del proceso de aprendizaje.

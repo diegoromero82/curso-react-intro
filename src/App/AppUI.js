@@ -6,6 +6,10 @@ import { TodoItem } from '../Components/TodoItem';
 import { CreateTodoButton } from '../Components/CreateTodoButton';
 import { TodoContext } from '../Context/TodoContext';
 
+// Se mantiene junto a la interfaz para que el footer comunique la versión de
+// React usada por el proyecto sin convertirla en estado de la aplicación.
+const REACT_VERSION = '19.3.0';
+
 function AppUI() {
     // CONSUMIDOR: useContext lee el objeto entregado por TodoContext.Provider
     // en App. Así AppUI no necesita recibir ni declarar una lista extensa
@@ -98,6 +102,18 @@ function AppUI() {
                 {/* El padre controla la apertura y recibe del hijo las solicitudes
             de crear o cerrar. */}
             </section>
+
+            <footer className="app-footer">
+                <span>React {REACT_VERSION}</span>
+                <span aria-hidden="true">•</span>
+                <a
+                    href="https://github.com/diegoromero82"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Desarrollado por Diego Romero
+                </a>
+            </footer>
         </main>
     );
 }
