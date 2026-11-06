@@ -1,5 +1,10 @@
 # Bitácora de ajustes
 
+## 2026-11-06
+
+- Se migró el modal de creación de tareas a React Portal mediante `createPortal`, con `#modal-root` como destino en `public/index.html`.
+- Se añadieron comentarios didácticos que explican cómo el portal conserva el estado, las props y los eventos de React aunque el modal se monte fuera de `#root`.
+
 ## 2026-10-03
 
 - Se creó una interfaz de tareas moderna, minimalista y adaptable a móviles.
